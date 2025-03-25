@@ -1,11 +1,11 @@
 export const SITE = {
     website: "https://simple-portfolio.vicbox.dev", // replace this with your deployed domain
-    title: "Simple Portfolio",
-    description: "A simple but beautiful portfolio created with Astro",
-    tags: ["portfolio", "Resume cv", "Astro"],
+    title: "Valérie Lavoisier Portfolio",
+    description: "Valerie Lavoisier web developer's Portfolio",
+    tags: ["portfolio", "Resume cv", "PHP/Symfony Developer", "Valérie Lavoisier"],
     ogImage: "/og-image.webp",
     logo: "logo",
-    logoText: "Portfolio",
+    logoText: "Valérie Lavoisier",
     lang: "en",
     favicon: "/favicon.png",
     repository: "https://github.com/vito8916/simple-portfolio.git",
@@ -14,65 +14,61 @@ export const SITE = {
 }
 
 export const ME = {
-    name: "VicBox Dot Dev",
-    profession: "Software Engineer | Full Stack Developer",
-    profileImage: "pp2.png",
+    name: "Valérie Lavoisier",
+    profession: "Student | PHP/Symfony Developer",
+    profileImage: "valerie-lavoisier.png",
     profileFacts: [
         {
             value: 10,
             description: "Years of Experience"
         },
         {
-            value: 5,
+            value: 14,
             description: "Completed Projects"
         },
         {
-            value: 4,
+            value: 14,
             description: "Satisfied Clients"
         }
     ],
     contactInfo: {
-        email: "vicbox.dev@vicbox.dev",
-        linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
+        email: "val.lavoisier3@gmail.com",
+        linkedin: "https://www.linkedin.com/in/lavoisier-val%C3%A9rie-48051a16a/",
         resumeDoc: "resume.pdf",
     },
-    aboutMe: "I am a software engineer with a passion for web development. I have experience in building web " + "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " + "sharing knowledge with others.",
+    aboutMe: " I am currently a student at OpenClassrooms, where I am preparing for an RNCP Level 6 diploma as a web application developer specializing in PHP/Symfony. Passionate about development since 2007, I am a self-taught developer who leverages skills in Front-end, Back-end, design, and technological monitoring to create innovative and tailored solutions." + 
+
+    " Throughout my journey, I have gained solid expertise in creating and redesigning websites through my work as a freelancer with ValWebCreation. This experience allowed me to deliver customized projects that meet specific client needs, combining creativity, technical expertise, and a deep understanding of the challenges unique to various industries." + 
+    
+    " Today, my training at OpenClassrooms provides me with the opportunity to deepen my technical skills and enhance my ability to collaborate effectively within multidisciplinary teams. With my versatility and experience, I am now seeking to join a dynamic agency where I can actively contribute to ambitious projects while continuing to grow alongside industry experts."
+    
+
 }
 
 export const SOCIALS = [
-    {
-        name: "Twitter",
-        url: "https://twitter.com/vicbox.dev",
-        icon: "twitter-x-fill",
-        show: true
-    },
+    
     {
         name: "Facebook",
-        url: "https://www.facebook.com/vicbox.dev",
+        url: "https://www.facebook.com/valerie.lavoisier.3/",
         icon: "facebook-fill",
-        show: false
+        show: true    
     },
+    
     {
-        name: "Instagram",
-        url: "https://www.instagram.com/vicbox.dev",
-        icon: "instagram-fill",
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/lavoisier-val%C3%A9rie-48051a16a/",
+        icon: "linkedin-fill",
         show: true
     },
     {
-        name: "Youtube",
-        url: "https://www.youtube.com/vicbox.dev",
-        icon: "youtube-fill",
+        name: "GitLab",
+        url: "https://gitlab.com/flitsou",
+        icon: "gitlab-fill",
         show: true
-    },
-    {
-        name: "TikTok",
-        url: "https://tiktok.com/vicbox.dev",
-        icon: "tik-fill",
-        show: false
     },
     {
         name: "GitHub",
-        url: "https://github.com/vicbox.dev",
+        url: "https://github.com/valavoisier",
         icon: "github-fill",
         show: true
     }

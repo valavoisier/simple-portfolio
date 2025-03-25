@@ -19,6 +19,14 @@ const softSkills: SoftSkill[] = [
     {
         name: "Time Management",
         icon: "time-fill"
+    },
+    {
+        name: "Multi Skilling",
+        icon: "tools-fill"
+    },
+    {
+        name: "Versatility",
+        icon: "group-fill"
     }
 ];
 

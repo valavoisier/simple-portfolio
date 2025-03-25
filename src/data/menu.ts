@@ -11,4 +11,8 @@ export const menu = [
         href: '/blog',
         label: 'Blog',
     },
+    {
+        href: '/valwebcreation',
+        label: 'Valwebcreation',
+    },
 ]

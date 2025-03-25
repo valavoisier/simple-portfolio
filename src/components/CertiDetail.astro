@@ -1,0 +1,51 @@
+---
+// component imports
+import {Badge} from "./ui/badge";
+
+// lib imports
+import {formatDatetime} from "../lib/utils";
+
+interface Certi {
+    title: string;
+    startDate: string;
+    endDate?: string;
+    description: string;
+    descriptiontwo: string;
+    descriptionthree: string;
+    descriptionfour: string;
+    descriptionfive: string;
+    descriptionsix: string;
+    vdescriptionseven: string;
+    currentUni: boolean;
+}
+
+const {certiData} = Astro.props;  // Ensure correct typing for the props
+const {
+    title,
+    startDate,
+    endDate,
+    description,
+    descriptiontwo,
+    descriptionthree,
+    descriptionfour,
+    descriptionfive,
+    descriptionsix,
+    descriptionseven,
+    currentUni
+} = certiData as Certi;
+---
+
+<div class="flex flex-col gap-2">
+    <Badge className="bg-primary-light dark:bg-primary-dark w-fit rounded-md">
+        {formatDatetime(startDate)} - {currentUni ? "Present" : formatDatetime(endDate)}
+    </Badge>
+    <h3 class="text-xl font-bold">{title}</h3>
+    
+    <p>{description}</p>
+    <p>{descriptiontwo}</p>
+    <p>{descriptionthree}</p>
+    <p>{descriptionfour}</p>
+    <p>{descriptionfive}</p>
+    <p>{descriptionsix}</p>
+    <p>{descriptionseven}</p>
+</div>

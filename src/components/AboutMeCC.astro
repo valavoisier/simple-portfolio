@@ -2,6 +2,7 @@
 // data imports
 import workExperience from "@/data/Jobs.ts"
 import education from "@/data/education.ts"
+import certification from "@/data/certification.ts"
 import languages from "../data/languages.ts"
 import hardSkills from "@/data/hardSkills"
 import softSkills from "@/data/softSkills"
@@ -9,6 +10,7 @@ import softSkills from "@/data/softSkills"
 // component imports
 import JobDetails from "./JobDetails.astro";
 import EduDetail from "./EduDetail.astro";
+import CertiDetail from "./CertiDetail.astro";
 import SkillCard from "./SkillCard.astro";
 
 // config import
@@ -29,6 +31,15 @@ import {ME} from '@/config';
         <div class="flex flex-col gap-6">
             {workExperience.map((job) => (
                     <JobDetails jobData={job}/>
+            ))}
+        </div>
+    </div>
+    {/*Training and Certifications section*/}
+    <div class="mb-4">
+        <h2 class="text-3xl font-bold mb-4">Training and Certifications</h2>
+        <div class="flex flex-col gap-6">
+            {certification.map((certi) => (
+                    <CertiDetail certiData={certi}/>
             ))}
         </div>
     </div>
